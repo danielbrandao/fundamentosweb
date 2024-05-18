@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo e Portfólio</title>
+    <link rel="stylesheet" href="assets/styles2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Meu Currículo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre Mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfólio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="padding-top: 70px;">
+        <header class="text-center my-4">
+            <h1>Nome Sobrenome</h1>
+            <p>Desenvolvedor Web</p>
+        </header>
+        <section id="about" class="mb-4 d-flex align-items-center">
+            <img src="assets/imgs/Daniel perfil.png" alt="Sua Foto" class="mr-3" style="width: 150px; height: 150px; border-radius: 50%;">
+            <div>
+                <h2>Sobre Mim</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit libero. Proin venenatis, turpis ut commodo dapibus, est nulla dictum nunc, at aliquam velit augue ut magna.</p>
+            </div>
+        </section>
+        <section id="experience" class="mb-4">
+            <h2>Experiência</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit libero. Proin venenatis, turpis ut commodo dapibus, est nulla dictum nunc, at aliquam velit augue ut magna.</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Nulla vel velit libero. Proin venenatis.</li>
+            </ul>
+        </section>
+        <section id="skills" class="mb-4">
+            <h2>Habilidades</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit libero. Proin venenatis, turpis ut commodo dapibus, est nulla dictum nunc, at aliquam velit augue ut magna.</p>
+            <p>HTML, CSS, JavaScript, Bootstrap</p>
+        </section>
+        <section id="portfolio" class="mb-4">
+            <h2>Portfólio</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit libero. Proin venenatis, turpis ut commodo dapibus, est nulla dictum nunc, at aliquam velit augue ut magna.</p>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="assets/imgs/aula Fab Porto.png" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Descrição do projeto 1.</p>
+                        <a href="assets/imgs/aula Fab Porto.png" data-toggle="modal" data-target="#imageModal" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/Aula porto 24-05.png" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Descrição do projeto 2.</p>
+                        <a href="assets/imgs/Aula porto 24-05.png" data-toggle="modal" data-target="#imageModal" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button id="togglePortfolio" class="btn btn-primary">Mostrar/Esconder Portfólio</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Imagem do Projeto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Imagem do Projeto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

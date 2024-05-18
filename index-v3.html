@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo e Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Nome do Aluno</h1>
+            <p>Desenvolvedor Web</p>
+        </header>
+        <section id="about" class="mb-4 d-flex align-items-center">
+            <img src="your-photo.jpg" alt="Sua Foto" class="mr-3" style="width: 150px; height: 150px; border-radius: 50%;">
+            <div>
+                <h2>Sobre Mim</h2>
+                <p>Breve descrição sobre o aluno.</p>
+            </div>
+        </section>
+        <section id="experience" class="mb-4">
+            <h2>Experiência</h2>
+            <ul>
+                <li>Experiência 1</li>
+                <li>Experiência 2</li>
+            </ul>
+        </section>
+        <section id="skills" class="mb-4">
+            <h2>Habilidades</h2>
+            <p>HTML, CSS, JavaScript, Bootstrap</p>
+        </section>
+        <section id="portfolio" class="mb-4">
+            <h2>Portfólio</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Descrição do projeto 1.</p>
+                        <a href="project1.jpg" data-toggle="modal" data-target="#imageModal" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="project2.jpg" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Descrição do projeto 2.</p>
+                        <a href="project2.jpg" data-toggle="modal" data-target="#imageModal" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Imagem do Projeto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Imagem do Projeto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
